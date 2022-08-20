@@ -1,0 +1,34 @@
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading {
+    text-align: center;
+    height: 15%;
+    color: #fff;
+}
+
+.mainContainer {
+    width: 90%;
+    height: 90vh;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    z-index: 2;
+    overflow-y: scroll;
+}
+
+.row {
+    align-content: flex-start;
+}
+
+.table .row{
+    padding:0 20px;
+    border-radius: 20px;
+}
+
+.table span{
+    font-size: 12px;
+}
