@@ -9,14 +9,56 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/table.css">
     <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        td{
+            width: 50%;
+        }
+        .options {
+            padding: 0 20px !important;
+        }
+
+        .heading {
+            height: 30%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .form-check {
+            padding: 20px;
+        }
+
+        .profileTr{
+            position: relative;
+        }
+        .profile{
+            background-color: none;
+        }
+        .img {
+            position: absolute;
+            right: 4%;
+            top: 150%;
+            width: 126px;
+            margin-bottom: 20px;
+            padding: 0;
+            border-radius: .375rem;
+        }
+    </style>
 </head>
 
 <body>
     <img src="/assets/bg1.5.svg" class="backGround">
+
     <div class="container-fluid" id="container">
         <div class="row mainContainer">
-            <h2 class="heading">Fillup Person Details</h2>
+            <h2 class="heading">Person Details</h2>
             <table class="table table-dark table-striped">
+                <tr class="profileTr">
+                    <td class="profile">
+                        <img src="./assets/icon.jpg" alt="Person Image" class="img">
+                    </td>
+                    <td></td>
+                </tr>
                 <tr>
                     <td>
                         <div class="my-2 row">
@@ -27,6 +69,9 @@
                             </div>
                         </div>
                     </td>
+                    <td></td>
+                </tr>
+                <tr>
                     <td>
                         <div class=" my-2 row">
                             <label for="colFormLabel" class="col-sm-4 col-form-label">Age <span
@@ -36,6 +81,7 @@
                             </div>
                         </div>
                     </td>
+                    <td></td>
                 </tr>
                 <tr>
                     <td>
@@ -47,6 +93,7 @@
                             </div>
                         </div>
                     </td>
+
                     <td>
                         <div class=" my-2 row">
                             <label for="colFormLabel" class="col-sm-4 col-form-label">Identification Mark <span
@@ -67,6 +114,7 @@
                             </div>
                         </div>
                     </td>
+
                     <td>
                         <div class=" my-2 row">
                             <label for="colFormLabel" class="col-sm-4 col-form-label">Since When <span
@@ -87,6 +135,7 @@
                             </div>
                         </div>
                     </td>
+
                     <td>
                         <div class=" my-2 row">
                             <label for="colFormLabel" class="col-sm-4 col-form-label">Govt ID Number <span
@@ -107,6 +156,7 @@
                             </div>
                         </div>
                     </td>
+
                     <td>
                         <div class=" my-2 row">
                             <label for="colFormLabel" class="col-sm-4 col-form-label">Army ID Number <span
@@ -127,6 +177,7 @@
                             </div>
                         </div>
                     </td>
+
                     <td>
                         <div class=" my-2 row">
                             <label for="colFormLabel" class="col-sm-4 col-form-label">Frequency of Visit <span
@@ -146,9 +197,11 @@
                 <tr>
                     <td>
                         <div class=" my-2 row">
-                            <label for="colFormLabel" class="col-sm-4 col-form-label">Concerned <span class="">*</span></label>
+                            <label for="colFormLabel" class="col-sm-4 col-form-label">Concerned <span
+                                    class="">*</span></label>
                             <div class="col-sm-8">
                                 <select class="form-select" aria-label="Default select example">
+
                                     <option selected>Select One Options</option>
                                     <option value="1">Br</option>
                                     <option value="2">Sec</option>
@@ -158,6 +211,7 @@
                             </div>
                         </div>
                     </td>
+
                     <td>
                         <div class=" my-2 row">
                             <label for="colFormLabel" class="col-sm-4 col-form-label">Likely Timeline <span
@@ -178,6 +232,7 @@
                             </div>
                         </div>
                     </td>
+
                     <td>
                         <div class=" my-2 row">
                             <label for="colFormLabel" class="col-sm-4 col-form-label">Occupation <span
@@ -198,6 +253,7 @@
                             </div>
                         </div>
                     </td>
+
                     <td>
                         <div class=" my-2 row">
                             <label for="colFormLabel" class="col-sm-4 col-form-label">Address Proof(Document) <span
@@ -218,6 +274,7 @@
                             </div>
                         </div>
                     </td>
+
                     <td>
                         <div class=" my-2 row">
                             <label for="colFormLabel" class="col-sm-4 col-form-label">Address Proof(LOC) <span
@@ -226,10 +283,59 @@
                                 <input type="file" class="form-control" id="colFormLabel" placeholder="" required>
                             </div>
                         </div>
+                </tr>
+                <tr>
+                    </td>
+                    <td class="options">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                                Black list
+                            </label>
+                        </div>
+                    </td>
+
+                    <td class="options">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                                Grey list
+                            </label>
+                        </div>
+                </tr>
+                <tr>
+                    </td>
+                    <td class="options">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                                White list
+                            </label>
+                        </div>
+                    </td>
+
+                    <td class="options">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                                Not yet Assigned
+                            </label>
+                        </div>
                     </td>
                 </tr>
+                <tr>
+                    <td class="options">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                                Can’t be ascertained
+                            </label>
+                        </div>
+                    </td>
+                    <td></td>
+                </tr>
             </table>
-            <a id="submitBtn" href="./catagory.html" class="btn btn-primary">Continue <i class="fa fa-arrow-right"></i></a>
+            <a id="submitBtn" href="./index.html" class="btn btn-primary">Continue <i class="fa fa-arrow-right"></i></a>
         </div>
     </div>
 

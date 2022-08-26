@@ -32,3 +32,7 @@
 .table span{
     font-size: 12px;
 }
+
+.table-striped>tbody>tr:nth-of-type(odd)>* {
+    --bs-table-accent-bg: none;
+}
